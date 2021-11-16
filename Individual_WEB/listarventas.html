@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Listar Ventas</title>
+</head>
+
+<header>
+    <a href="negocio.html"> Home</a>|
+    <a href="ingreso.html"> Ingreso</a>|
+    <a href="agregarventa.html"> Agregar Ventas</a>|
+
+
+    <center>
+        <h1><b>Panaderia "Los Panes Ricos"</b></h1>
+    </center>
+
+    <h2>Negocio Minorista</h2>
+</header>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Listado<b>Ventas</b></h2>
+                    </div>
+                    <div class="col-sm-6">
+
+                        <a href="#deleteVentaModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Borrar</span></a>
+                        <a href="agregardetalleventa.html" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Agregar producto a la venta</span></a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover" id="table_b">
+                <thead>
+                    <tr>
+                        <th>
+                            <span class="custom-checkbox">
+								<input type="checkbox" id="selectAll">
+								<label for="selectAll"></label>
+							</span>
+                        </th>
+                        <th>ID Ventas</th>
+                        <th>Nombre Vendedor</th>
+                        <th>Subtotal</th>
+                        <th>Impuesto</th>
+                        <th>total</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+								<input type="checkbox" id="checkbox1" name="options[]" value="1">
+								<label for="checkbox1"></label>
+							</span>
+                        </td>
+                        <td>00010</td>
+                        <td>Carlos Perez</td>
+                        <td>10000</td>
+                        <td>1900</td>
+                        <td>11900</td>
+                        <td>
+                            <a href="agregardetalleventa.html"><i class="material-icons" data-toggle="tooltip" title="Agregar">&#xe148;</i></a>
+                            <a href="#deleteVentaModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+								<input type="checkbox" id="checkbox2" name="options[]" value="1">
+								<label for="checkbox2"></label>
+							</span>
+                        </td>
+                        <td>00011</td>
+                        <td>Dominique Perrier</td>
+                        <td>20000</td>
+                        <td>3800</td>
+                        <td>23800</td>
+                        <td>
+                            <a href="agregardetalleventa.html"><i class="material-icons" data-toggle="tooltip" title="Agregar">&#xe148;</i></a>
+                            <a href="#deleteVentaModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+								<input type="checkbox" id="checkbox3" name="options[]" value="1">
+								<label for="checkbox3"></label>
+							</span>
+                        </td>
+                        <td>00012</td>
+                        <td>Cecilia Romero</td>
+                        <td>15000</td>
+                        <td>2850</td>
+                        <td>17850</td>
+                        <td>
+                            <a href="agregardetalleventa.html"><i class="material-icons" data-toggle="tooltip" title="Agregar">&#xe148;</i></a>
+                            <a href="#deleteVentaModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+								<input type="checkbox" id="checkbox4" name="options[]" value="1">
+								<label for="checkbox4"></label>
+							</span>
+                        </td>
+                        <td>00013</td>
+                        <td>Fran Wilson</td>
+                        <td>16000</td>
+                        <td>3040</td>
+                        <td>19040</td>
+                        <td>
+                            <a href="agregardetalleventa.html"><i class="material-icons" data-toggle="tooltip" title="Agregar">&#xe148;</i></a>
+                            <a href="#deleteVentaModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+								<input type="checkbox" id="checkbox5" name="options[]" value="1">
+								<label for="checkbox5"></label>
+							</span>
+                        </td>
+                        <td>00014</td>
+                        <td>Martin Blank</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="agregardetalleventa.html"><i class="material-icons" data-toggle="tooltip" title="Agregar">&#xe148;</i></a>
+                            <a href="#deleteVentaModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Borrar">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="clearfix">
+                <div class="hint-text">Mostrando de <b>5</b> hasta <b>10</b> entradas</div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#">Primera Pagina</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Delete Modal HTML -->
+    <div id="deleteVentaModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Borrar Venta</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>UD. esta seguro de borrar este Registro?</p>
+                        <p class="text-warning"><small>Esta acción no se puede deshacer</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                        <input type="submit" class="btn btn-danger" value="Borrar" onclick="borrado()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button id="cambio1">Cambio estilo 1</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#cambio1").on("click", function() {
+                $("#table_b>thead").addClass('table-dark');
+                $("#table_b>tbody").addClass('table-dark');
+            });
+        });
+    </script>
+
+    <footer>
+        <p>Nos puedes encontrar en nuestras redes sociales.</p>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        <h4> Copyright - todos los dereches sobre imagenes u otros.</h4>
+        <p>&copy; by Le Pepe </p>
+    </footer>
+    <script>
+        function borrado() {
+            alert('Registro Borrado exitosamente')
+        }
+    </script>
+</body>
+
+</html>

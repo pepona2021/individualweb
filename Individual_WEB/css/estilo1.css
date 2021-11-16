@@ -1,0 +1,82 @@
+/*******************************/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cornflowerblue;
+    background-image: url("../img/pan4.jpg");
+    background-size: 102%;
+    background-repeat: no-repeat;
+}
+
+h2,
+h3 {
+    color: #4e0f32;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: #8d5881d7;
+}
+
+a {
+    color: #4e0f32;
+}
+
+form,
+p {
+    margin: 20px;
+}
+
+p.note {
+    font-size: 1rem;
+    color: red;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-family: 'Lato';
+    width: 300px;
+    margin-top: 10px;
+}
+
+label {
+    width: 300px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+label span {
+    font-size: 1rem;
+}
+
+label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+
+[type="submit"],
+[type="reset"],
+button,
+html [type="button"] {
+    margin-left: 0;
+    border-radius: 0;
+    background: rgb(65, 68, 224);
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding: 10px 0;
+    line-height: 1;
+}

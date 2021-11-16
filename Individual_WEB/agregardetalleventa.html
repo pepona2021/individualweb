@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETALLE VENTA</title>
+    <link href="css/agregardetalleventa.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <a href="negocio.html"> Home</a>|
+        <a href="ingreso.html"> Ingreso</a>|
+        <a href="agregarventa.html"> Agregar Venta</a>|
+        <a href="listarventas.html"> Listar Ventas</a>|
+        <center>
+            <h1><b>Panaderia "Los Panes Ricos"</b></h1>
+        </center>
+
+        <h2>Negocio Minorista</h2>
+    </header>
+
+
+    <!-- Formulario detalle de  Ventas -->
+
+    <article class="articulo-clientes">
+        <div id="errores">
+        </div>
+        <h2>Detalle de Ventas</h2>
+        <form class="formulario-ventas" id="formulario">
+            <select name="venta" id="venta">
+                        <option value="0">Selección Venta</option>
+                        <option value="boleta">Boleta</option>
+                        <option value="factura">Factura</option>
+                    </select>
+            <select name="producto" id="producto">
+                        <option value="0">Selección Producto</option>
+                        <option value="panbaguette">Pan Baguette</option>
+                        <option value="Panciabatta">Pan Ciabatta</option>
+                        <option value="pancroissant">Pan Croissant</option>
+                        <option value="pandedampo">Pan de Campo</option>
+                        <option value="pandehoja">Pan de Hoja</option>
+                        <option value="Pandehotdog">Pan de Hot Dog</option>
+                        <option value="pandemolde">Pan de Molde</option>
+                        <option value="panhallulla">Pan Hallulla</option>
+                    </select>
+            <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad">
+            <input type="submit" value="Ingresar Detalle" id="ingresar-detalle">
+        </form>
+    </article>
+
+    <!-- Resumen de Ventas -->
+    <article id="detalle">
+        <h2>Resumen de Venta</h2>
+        <table id="insertar-dato">
+            <tr class="title_table">
+                <th>Tipo Venta</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+            </tr>
+            <!-- Acá se insertan los datos en la tabla por medio de jQuery -->
+        </table>
+    </article>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/agregardetalleventa.js"></script>
+
+</body>
+
+</html>

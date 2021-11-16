@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <a href="negocio.html"> Home</a>|
+        <a href="agregarventa.html"> Agregar Ventas</a>|
+        <a href="listarventas.html"> Listar Ventas</a>|
+
+
+
+        <center>
+            <h1><b>Panaderia "Los Panes Ricos"</b></h1>
+        </center>
+
+        <h2>Negocio Minorista</h2>
+    </header>
+
+    <section>
+        <h3>Ingreso de Usuario</h3>
+        <img width="35%" src="../img/pan.jpg" align="right" alt="imagen productos" title="productos"> Usuario :<input id="nombre" type="admin" /> <br/><br/> Contrseña:
+        <input id="contraseña" type="1234 " /> <br/><br/>
+        <div class="modal-footer">
+            <div class="col-md-12 text-center">
+                <input type="button" class="btn btn-default" data-dismiss="modal" value="Ingreso" onclick="enviar()">
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function enviar() {
+            var nombre = document.getElementById("nombre");
+            // operadores de comparación
+            // == comprueba igualdad.
+            // != distinto de.
+            // >, <, >=, <= mayor que, menor que, mayor o igual que, menor o igual que.
+
+            if (nombre.value == "" || contraseña.value == "") {
+                alert('vuelva intentar')
+            } else {
+                document.querySelector("h2").innerHTML = "Bienvenido " + nombre.value;
+                window.location = "agregarcliente.html";
+            }
+        }
+    </script>
+
+    <footer>
+        <p>Nos puedes encontrar en nuestras redes sociales.</p>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        <h4> Copyright - todos los dereches sobre imagenes u otros.</h4>
+        <p>&copy; by Le Pepe </p>
+    </footer>
+</body>
+
+</html>

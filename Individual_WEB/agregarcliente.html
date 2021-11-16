@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Cliente</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/registro.css">
+    <link rel="Shortcut Icon" href="IMG/logo.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- //header -->
+    <header>
+        <a href="negocio.html"> Home</a>|
+        <a href="ingreso.html"> Ingreso</a>|
+        <a href="agregarventa.html"> Agregar Venta</a>|
+        <a href="listarventas.html"> Listar Ventas</a>|
+        <center>
+            <h1><b>Panaderia "Los Panes Ricos"</b></h1>
+        </center>
+
+        <h2>Negocio Minorista</h2>
+    </header>
+    <main>
+
+        <h2>Agregar Cliente</h2>
+        </div>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombres</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Villalobos">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Usuario tiene que ingresar hasta 50 caracteres .</p>
+            </div>
+            <!-- Grupo: Apellido -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellidos</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Juan Villalobos">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Usuario tiene que ingresar hasta 50 caracteres.</p>
+            </div>
+
+            <!-- Grupo: Direccion -->
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">Direccion</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Riachuelo # 1434 Cerro Navia">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Usuario tiene que ingresar hasta 70 caracteres.</p>
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono (+569xxxxxxxx)</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="+569XXXXXXXX">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener un signo + y numeros hasta 11 dígitos.</p>
+            </div>
+
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+
+    <script src="JS/registro.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

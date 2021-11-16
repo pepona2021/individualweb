@@ -1,0 +1,356 @@
+/********** ESTILOS GENERALES **********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cornflowerblue;
+    background-image: url("../img/pan4.jpg");
+    background-size: 102%;
+    background-repeat: no-repeat;
+}
+
+h2,
+h3 {
+    color: #4e0f32;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: #8d5881d7;
+}
+
+a {
+    color: #4e0f32;
+}
+
+li {
+    list-style: none;
+}
+
+.banner-boton {
+    width: 180px;
+    height: 45px;
+    margin-top: 14px;
+    background: #085bd8;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.banner button {
+    transition: all .2s ease;
+}
+
+.banner button:hover {
+    transform: scale(1.1);
+}
+
+.banner-boton:active {
+    background: #085bd8;
+    box-shadow: none;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px 0;
+    background: #41b5d7;
+}
+
+.producto-card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 250px;
+    margin-bottom: 20px;
+    color: white;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    border: 5px solid #dacfbf;
+}
+
+.producto-card:hover {
+    box-shadow: none;
+    transition: all 0.7s ease;
+}
+
+.producto-card h2 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgba(134, 22, 22, 0.5);
+}
+
+.producto-card img {
+    width: 100%;
+}
+
+.mask {
+    overflow: hidden;
+}
+
+.mask img {
+    transition: all .4s ease;
+}
+
+.mask:hover img {
+    transform: scale(1.2);
+}
+
+
+/********** estilos  agregar detalle de venta **********/
+
+.articulo-clientes {
+    width: 40%;
+    height: 400px;
+}
+
+.articulo-clientes h2 {
+    margin-bottom: 20px;
+}
+
+
+/********** estilo formulario **********/
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.formulario input:last-child {
+    width: 50%;
+    margin: 0 auto;
+    background: #085bd8;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.formulario input:last-child:hover {
+    width: 53%;
+    transform: scale(1.05);
+}
+
+.formulario-ventas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario-ventas input,
+#venta,
+#producto {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.formulario-ventas input:last-child,
+.formulario-ventas input:nth-child(4) {
+    width: 70%;
+    margin: 0 auto 30px;
+    background: #085bd8;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.formulario-ventas input:nth-child(4):hover,
+.formulario-ventas input:nth-child(5):hover {
+    width: 73%;
+    transform: scale(1.05);
+}
+
+
+/********** estilos tabla  **********/
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 10px 20px;
+    background-color: #085bd8;
+    color: white;
+    border: 1px solid lightblue;
+}
+
+table td {
+    padding: 10px 0;
+    border: 1px solid lightsteelblue;
+}
+
+tr:nth-child(even) {
+    background-color: #ebebeb;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.fa-edit,
+.fa-trash-alt {
+    padding: 0 3px;
+    color: #085bd8;
+    cursor: pointer;
+}
+
+.fa-edit:hover,
+.fa-trash-alt:hover {
+    color: #41b5d7;
+    transform: scale(1.25);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/********** ESTILOS DETALLE VENTAS **********/
+
+#detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#detalle h2 {
+    margin-bottom: 20px;
+}
+
+.place::-webkit-input-placeholder {
+    color: white;
+}
+
+.input-color {
+    background: rebeccapurple;
+    color: white
+}
+
+
+/********** ESTILOS RESPONSIVIDAD **********/
+
+@media screen and (max-width: 768px) {
+    .menu-superior input,
+    .menu-superior i.fa-search {
+        display: none;
+    }
+    .menu-icons a {
+        padding: 5px;
+        margin: 0 0 0 5px;
+    }
+    header label {
+        display: block;
+        background: #303030;
+        margin: 0;
+        text-align: center;
+    }
+    .banner-productos {
+        height: 260px;
+    }
+    .banner-productos h2 {
+        width: 100%;
+        line-height: 80px;
+        font-size: 34px;
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 50px 10px 40px;
+    }
+    .producto-card {
+        width: 45%;
+    }
+    .articulo-clientes,
+    .articulo-ventas {
+        width: 100%;
+    }
+    .articulo-clientes:first-child,
+    .articulo-ventas {
+        height: 320px;
+        background-position: bottom center;
+    }
+    .articulo-clientes:last-child {
+        padding: 40px;
+        height: 500px;
+        margin-top: 20px;
+    }
+    #limpiar-formulario,
+    #ingresar-venta {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .articulo-clientes:first-child,
+    .articulo-ventas {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .articulo-ventas {
+        height: 200px;
+        padding: 20px 20px;
+    }
+    .articulo-clientes:first-child {
+        height: 25vh;
+    }
+    .articulo-clientes:last-child {
+        height: 480px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    #listado-ventas {
+        padding: 60px 0;
+        font-size: 14px;
+    }
+    table th {
+        padding: 6px;
+    }
+    table td {
+        padding: 6px;
+    }
+}
